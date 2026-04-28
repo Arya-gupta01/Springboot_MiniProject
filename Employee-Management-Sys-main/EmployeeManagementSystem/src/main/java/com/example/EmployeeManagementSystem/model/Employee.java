@@ -32,7 +32,7 @@ public class Employee {
         this.lastname = lastname;
         this.email = email;
     }
-
+// function to get id 
     public int getId() {
         return id;
     }
