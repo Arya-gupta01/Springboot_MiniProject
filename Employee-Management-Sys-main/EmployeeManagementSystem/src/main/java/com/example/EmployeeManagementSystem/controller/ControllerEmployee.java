@@ -1,4 +1,5 @@
 
+// added controller page
 package com.example.EmployeeManagementSystem.controller;
 
 import com.example.EmployeeManagementSystem.dto.DtoEmployee;
@@ -41,6 +42,7 @@ public class ControllerEmployee {
         // Return employee with HTTP 200 status
         return new ResponseEntity<>(e, HttpStatus.OK);
     }
+    // get function
 
     // READ: Get all employees
     @GetMapping
@@ -51,6 +53,7 @@ public class ControllerEmployee {
         // Return list with HTTP 200 status
         return new ResponseEntity<>(employees, HttpStatus.OK);
     }
+    // put function
 
     // UPDATE: Update employee details by ID
     @PutMapping("/{id}")
@@ -64,6 +67,7 @@ public class ControllerEmployee {
         // Return updated employee with HTTP 200 status
         return new ResponseEntity<>(updatedemp, HttpStatus.OK);
     }
+    //dlt function
 
     // DELETE: Remove employee by ID
     @DeleteMapping("/{id}")
