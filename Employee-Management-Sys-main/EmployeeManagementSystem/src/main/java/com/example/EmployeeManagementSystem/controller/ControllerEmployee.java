@@ -22,6 +22,11 @@ public class ControllerEmployee {
     private ServiceEmployeeIn serviceEmployee;
     private DtoEmployee updatedemployee;
 
+    /*
+     * CREATE Employee
+     * This API is used to add a new employee to the system.
+     * Endpoint: POST /api/employee
+     */
     @PostMapping
      public ResponseEntity<DtoEmployee> createEmployee(@RequestBody DtoEmployee dtaEmployee){
         DtoEmployee e=serviceEmployee.createEmployee(dtaEmployee);
