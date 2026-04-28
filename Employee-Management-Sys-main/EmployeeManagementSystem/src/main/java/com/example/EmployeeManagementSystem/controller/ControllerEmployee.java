@@ -1,4 +1,4 @@
-// added this
+
 package com.example.EmployeeManagementSystem.controller;
 
 import com.example.EmployeeManagementSystem.dto.DtoEmployee;
@@ -9,7 +9,6 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
-import org.springframework.web.bind.annotation.CrossOrigin;
 
 import java.util.List;
 
@@ -18,6 +17,7 @@ import java.util.List;
 @RequestMapping("api/employee")
 
 public class ControllerEmployee {
+    // Injecting Service Layer dependency
     @Autowired
     private ServiceEmployeeIn serviceEmployee;
     private DtoEmployee updatedemployee;
