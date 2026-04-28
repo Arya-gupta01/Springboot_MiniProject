@@ -1,3 +1,5 @@
+// added Employee model
+
 package com.example.EmployeeManagementSystem.model;
 
 import jakarta.persistence.*;
