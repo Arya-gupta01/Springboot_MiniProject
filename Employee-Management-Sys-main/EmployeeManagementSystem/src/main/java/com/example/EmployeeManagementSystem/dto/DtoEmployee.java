@@ -15,6 +15,7 @@ public class DtoEmployee {
         this.lastname = lastname;
         this.email = email;
     }
+    // to get the features
 
     public int getId() {
         return id;
