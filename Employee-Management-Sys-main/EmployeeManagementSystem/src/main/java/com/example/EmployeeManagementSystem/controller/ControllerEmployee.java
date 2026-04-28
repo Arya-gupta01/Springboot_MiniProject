@@ -1,4 +1,5 @@
 
+// added controller page
 package com.example.EmployeeManagementSystem.controller;
 
 import com.example.EmployeeManagementSystem.dto.DtoEmployee;
@@ -32,16 +33,19 @@ public class ControllerEmployee {
         DtoEmployee e=serviceEmployee.findById(id);
         return new ResponseEntity<>(e,HttpStatus.OK);
     }
+    // get function
     @GetMapping
     public ResponseEntity<List<DtoEmployee>> findAllEmployee(){
         List<DtoEmployee> employes =serviceEmployee.findAllEmployee();
         return new ResponseEntity<>(employes,HttpStatus.OK);
     }
+    // put function
     @PutMapping("/{id}")
     public ResponseEntity<DtoEmployee> updateEmployee(@PathVariable("id") int id,@RequestBody DtoEmployee updatedemployee){
         DtoEmployee updatedemp = serviceEmployee.updateEmployee(id,updatedemployee);
         return new ResponseEntity<>(updatedemp,HttpStatus.OK);
     }
+    //dlt function
     @DeleteMapping("/{id}")
     public ResponseEntity<String> deleteEmployee(@PathVariable("id") int id){
         serviceEmployee.deleteEmployee(id);
