@@ -1,3 +1,5 @@
+// added Employee model
+
 package com.example.EmployeeManagementSystem.model;
 //
 
@@ -30,7 +32,7 @@ public class Employee {
         this.lastname = lastname;
         this.email = email;
     }
-
+// function to get id 
     public int getId() {
         return id;
     }
