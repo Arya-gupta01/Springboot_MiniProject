@@ -1,6 +1,13 @@
-package com.example.EmployeeManagementSystem.model;
+// added Employee model
 
-import jakarta.persistence.*;
+package com.example.EmployeeManagementSystem.model;
+//
+
+import jakarta.persistence.Column ;
+import jakarta.persistence.Entity;
+import jakarta.persistence.Id;
+import jakarta.persistence.Table;
+
 
 
 

@@ -1,8 +1,9 @@
 package com.example.EmployeeManagementSystem.service;
 
+import java.util.List;
+
 import com.example.EmployeeManagementSystem.dto.DtoEmployee;
 
-import java.util.List;
 
 public interface ServiceEmployeeIn {
      DtoEmployee createEmployee(DtoEmployee dtoEmployee);
